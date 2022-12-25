@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/* a{
+    color: black !important;
+} */
+
+/* .brand-logo,h2{
+    font-family: 'Grand Hotel', cursive;
+} */
+/* toast */
+#toast-container{
+    bottom: 30px !important;
+    right: 20px !important;
+    left: auto !important;
+}
+
+.input-field input[type=text][type=password]:focus{
+    border-bottom: 1px solid rgb(8, 93, 252) !important;
+    box-shadow: 0 1px 0 0 rgb(8, 93, 252) !important;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+}
+
+.collection li{
+    width:100%;
+}
+*{
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-wrapper{
+    display: none;
+    position: sticky;
+    padding: 0 30%;
+  }
+  a{
+    color: black !important;
+  }
+  .brandLogo{
+    float: left;
+    font-family: 'Grand Hotel', cursive;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0;
+  }
+  .icons{
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+    object-fit: contain;
+  }
+  .navBar{
+    position:fixed;
+    top: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .right_Nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .right_Nav2{
+    z-index: 100;
+    display: none;
+  }
+  .cntiner{
+    padding-left: 8%;
+ }
+ .logOutbtn{
+   font-weight: 500;
+   padding: 10px;
+   width: 100%;
+   text-transform: capitalize;
+   border-radius: 5px;
+   color:white;
+   border: 0;
+   background-color: rgb(90, 156, 255);
+ }
+ .logOutbtn2{
+  font-weight: 500;
+  display: none;
+  float: right;
+  padding: 10px;
+  margin: auto;
+  align-self: center;
+  margin-top: 7px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(90, 156, 255);
+}
+.home-card{
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+  border-radius: 2px;
+
+}
+.mainDiv{
+  float: left;
+  width: 70%;
+  margin-left: 23%;
+  padding: 2% 8%;
+  height: 100vh;
+}
+
+/* ------------------------------------------------   SIDE BAR ------------------------------------------  */
+.Sidebar{
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  height: 100%;
+  padding: 40px 10px 30px 10px;
+  background: #ffffff;
+  border-right: 1px solid #cacaca;
+  transition: 0.3s;
+}
+.sidebarheader{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.InstaLogo{
+  object-fit: cover;
+  width: 50%;
+  height: 40px;
+  margin-left: 15px;
+  aspect-ratio: 1;
+}
+.sbBtn{
+  height: 60px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.sbBTNname{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 48px;
+  font-size: 14px;
+  padding: 0 12px;
+  border-radius: 24px;
+  line-height: 1;
+}
+.sbBTNname:hover{
+  background-color: #f2f2f2;
+}
+.sbBTNname :is(i,img){
+  scale: 1.05;
+}
+.sbBTNname > span{
+  transition: .3s;
+}
+.logo-icon{
+  display: none;
+  font-size: 28px;
+  height: 35px;
+  width: 51px;
+  text-align: center;
+}
+.logo-img{
+  margin-left: 14px;
+  height: 32px;
+}
+.sbBtn i{
+  position: relative;
+  font-size: 25px;
+  transition: 0.2s;
+}
+.profileImg{
+  object-fit: cover;
+  width: 28px;
+  height: 28px;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+.sbBtn i > span{
+  display: grid;
+  place-items: center;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  border: 1px solid #ffffff;
+  background: #ff2f40;
+  color: #f9f9f9;
+  font-size: 12px;
+  font-family: BlinkMacSystemFont;
+  font-style: normal;
+}
+.sbBtn i > em{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  border: 1px solid #ffffff;
+  background: #ff2f40;
+  color: #f9f9f9;
+  font-size: 12px;
+  font-family: BlinkMacSystemFont;
+  font-style: normal;
+}
+.navDiv{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.navDiv .sbBtn:last-child{
+  margin-top: auto;
+}
+@media (width < 900px) {
+    .logo-img{
+      display: none;
+    }
+    .logo-icon{
+      display: block;
+    }
+    .InstaLogo{
+      display: none;
+    }
+    .Sidebar{
+      width: 72px;
+    }
+    .sbBTNname{
+      width: 50px;
+    }
+    .sbBTNname > span{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .profileImg{
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+}
+@media (width <= 600px) {
+   .Sidebar{
+    display: none;
+   }
+}
+/* -------------------------------------------------- Search Modal -----------------------------------  */
+.Searchmodal{
+  background-color: rgba(0, 0, 0, 0.51);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  padding: 4% 33%;
+}
+.modalContent{
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#searchbar{
+  height: 20px;
+  width: 90%;
+  padding: 10px 15px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  border: 1px solid #cacaca;
+  margin: 20px 0px;
+}
+.userDisplayContainer{
+   height: 100%;
+   width: 100%;
+  overflow-y: scroll;
+}
+.userContainer{
+  cursor: pointer;
+  width: 90%;
+  height: max-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.userContainer:hover{
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.userNames{
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.modal-footer{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+/* ---------------------------------------------------Home js CSS ------------------------------- */
+
+.Post-top_Section{
+  width: 100%;
+  padding: 10px 7px;
+  display: flex;
+}
+.Post-top_Section > span{
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-left: 5px;
+  padding-top:1% ;
+}
+.HpPic{
+  cursor:none;
+  object-fit: cover;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+
+}
+.cancelbtn{
+  cursor: pointer;
+  border: 0;
+  top: 4%;
+  right: 9%;
+  padding: 5px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 100;
+}
+.deleteBTn{
+  float: right;
+}
+.card-actions > i{
+  margin-right: 10px;
+}
+.likes{
+  font-weight: 550;
+  font-size: 14px;
+}
+.caption{
+  margin-top: 5px;
+  font-size: 14px;
+}
+.captioner{
+  font-weight: 550;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.commentSection{
+  cursor: pointer;
+  width: 100%;
+  max-height: 55px;
+  overflow: hidden;
+  border-bottom: 1px #cacaca solid;
+  padding: 5px 0px;
+  /* background-color: violet; */
+}
+.AddComment {
+  display: flex;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+.AddComment > button{
+  font-size: 12px;
+  color: rgba(0, 0, 255, 0.577);
+  font-weight: 550;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+}
+
+/* -----------------------------------Create Post PAge ----------------------------------  */
+.cratePosttab{
+  align-self: center;
+  width: 70%;
+  text-align: center;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+}
+.previewImage{
+  object-fit: cover;
+  max-width: 500px;
+  max-height: 400px;
+}
+.label{
+  float: left;
+  color: rgb(20, 20, 20); 
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------------------------Edit Profile --------------------------------------- */
+.editprofileContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+}
+.column1{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cacaca;
+}
+.items{
+  font-weight: 500;
+  width: 100%;
+  height:max-content;
+  padding:10px;
+  cursor: pointer;
+}
+.items:hover{
+  background-color: #EFEFEF;
+}
+.column2{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+  border: 1px #cacaca solid;
+  border-left: 0;
+  padding: 5%;
+}
+.tagContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding-left: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.imagetagContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.uSername{
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+.cpp{
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(90, 156, 255);
+}
+.cpp:hover{
+  text-decoration: underline;
+}
+.tags{
+  min-width: 20%;
+  margin-right: 10%;
+}
+#editPageInput{
+  width: 50%;
+  height: 20px;
+  border: 1px solid #cacaca;
+  margin: 0;
+  padding: 1%;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#editPageTextarea{
+  cursor: pointer;
+  min-width: 52%;
+  max-width: 52%;
+  min-height: 50px;
+  max-height: 120px;
+  border: 1px solid #cacaca;
+  margin: 0;
+  padding: 2%;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.submitBtn{
+  font-weight: 500;
+  align-self: center;
+  margin: auto;
+  width: 15%;
+  padding: 5px;
+  color: white;
+  background-color: rgb(90, 156, 255);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+/* ---------------------------------------------- User Profile List ------------------------------------  */
+
+.userprofileContainer{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+.modalTitle{
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: .5px;
+}
+.userprofile{
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.midDtailuser{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 60%;
+}
+.DuserName{
+  font-weight: 550;
+  font-size: 14px;
+}
+.userprofileContainer:hover{
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+.FollowingBtn{ 
+  font-size: 12px;
+  font-weight: 550;
+  background-color: transparent;
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+/* @media only screen and (max-width : 900px) and (min-width: 601px){
+  .home-card{
+     width: 40%;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .cntiner{
+    padding-left: 0;
+  }
+} */
+@media only screen and (max-width : 900px){
+ .mainDiv{
+  width: 100%;
+  margin-left: 0;
+ }
+}
+@media only screen and (max-width : 600px){
+  .cntiner{
+    padding-left: 0;
+    padding-top: 10%;
+  }
+  .nav-wrapper{
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: max-content;
+    padding: 4% 8%;
+    height: max-content;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .right_Nav{
+    display: none;
+  }
+  .right_Nav2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: white;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+  }
+  .icons{
+    width: 30px;
+    height: 30px;
+  }
+  .logOutbtn2{
+    display: block;
+  }
+  #toast-container{
+     width: 100% !important;  
+  }
+  .Searchmodal{
+    padding: 12%;
+  }
+  .mainDiv{
+    width: 100%;
+    margin-left: 0;
+    padding: 2%;
+    padding-top: 20%;
+   
+  }
+}
+@media only screen and (max-width : 500px){
+  .Searchmodal{
+    padding: 25% 5%;
+  }
+  .cancelbtn{
+    aspect-ratio: .5;
+    right: 5%;
+    top: 3%;
+  }
+  
+  /* ---------------------- Edit Profile ------------- */
+  .editprofileContainer{
+    height: 50vh;
+    margin: 5%;
+    width: 90%;
+  }
+  .column1{
+    width: 40%;
+  }
+  .column2{
+    padding: 1%;
+  }
+  .imagetagContainer{
+    margin-left: 10%;
+  }
+  #editPageInput{
+    width: 55%;
+  }
+  #editPageTextarea{
+    font-size: 9px;
+    padding: 2%;
+    min-width: 57%;
+    min-height: 55%;
+  }
+  .tagContainer{
+    padding-left: 5%;
+  }
+  .tags{
+    float: left;
+    min-width: 33%;
+    margin-right: 5%;
+  }
+  .submitBtn{
+    margin-top: 50px;
+    width: 35%;
+  }
+}
+
+
+@media only screen and (max-width : 400px){
+  .cancelbtn{
+    aspect-ratio: .5;
+    right: 5%;
+    top: 2.8%;
+  }
+  .midDtailuser{
+    width: 50%;
+  }
+  .FollowingBtn{
+    width: 40%;
+  }
+  .mainDiv{
+    width: 100%;
+  }
+}

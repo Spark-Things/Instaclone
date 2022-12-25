@@ -1,0 +1,115 @@
+.brand-logo{
+    color: black;
+    font-family: 'Grand Hotel', cursive;
+    cursor: pointer;
+    font-size: 48px ;
+    text-align: center;
+  }
+.My-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #003aff;
+    background-image: linear-gradient(132deg, #003aff 0%, #ff00e5 33%, #ff8700 75%, #fff503 99%);
+    
+ }
+ .Logincard{
+   margin: auto;
+   width: 25%;
+   background-color: #f9f9f9;
+   height: max-content;
+   padding: 2%;
+   border: 1px solid #cacaca;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+ label{
+   font-weight: 600;
+   color: black;
+   font-size: 16px;
+   letter-spacing: 1.5px;
+ }
+ #inputTxt{
+   width: 100%;
+   padding: 0px 10px;
+   height: 30px;
+   font-size: 14px;
+   border-radius: 10px;
+   background-color: transparent;
+ }
+ .Fptxt{
+   cursor: pointer;
+   color: black;
+   font-weight: 550;
+ }
+ .Fptxt:hover{
+  color: #457aff;
+ }
+ .LoginBtn{
+  cursor: pointer;
+   padding: 10px;
+   min-width: 25%;
+   margin: auto;
+   color: white;
+   margin-top: 10px;
+   border: 0;
+   background-color: rgb(90, 156, 255);
+   font-weight: 550;
+   border-radius: 5px;
+ }
+ input[type=text]:focus {
+   border-bottom: 2px solid #457aff !important;
+   box-shadow: 0 1px 0 0 #457aff !important; 
+ }
+ input[type=password]:focus{
+   border-bottom: 2px solid #457aff !important;
+   box-shadow: 0 1px 0 0 #457aff !important; 
+ }
+ .profilePic{
+    object-fit:cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+ .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Upload Profile Pic';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    padding: 5px 80px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #457aff;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+  #toast-container{
+    bottom: 60px !important;
+    right: 20px !important;
+    left: auto !important;
+  }
+  @media  only screen and (max-width: 900px) {
+     .Logincard{
+      width: 95%;
+      margin: 10px;
+      padding-top: 10%;
+     }
+     #inputTxt{
+      width: 95%;
+     }
+  }
