@@ -12,7 +12,7 @@ const Home = () => {
 
   // var open = true;
   useEffect(() => {
-    fetch("https://insta-backend-five.vercel.app/allpost", {
+    fetch("/allpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   const likePost = (id) => {
-    fetch("https://insta-backend-five.vercel.app/like", {
+    fetch("/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const Home = () => {
   };
 
   const unlikePost = (id) => {
-    fetch("https://insta-backend-five.vercel.app/unlike", {
+    fetch("/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const Home = () => {
     if (text === "" || text === null || text == " ") {
       return;
     }
-    fetch("https://insta-backend-five.vercel.app/comment", {
+    fetch("/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -112,7 +112,7 @@ const Home = () => {
   };
 
   const deletePost = (postid) => {
-    fetch(`https://insta-backend-five.vercel.app/deletepost/${postid}`, {
+    fetch(`/deletepost/${postid}`, {
       //   this is back qoute
       method: "delete",
       headers: {
