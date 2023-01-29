@@ -18,7 +18,7 @@
 
 #Aa Vachyu hoyy to ane gamyu hoyy k naa gamyu hoyy ek var jarur mari aa website chakasjo niche link muku chu..
 
-link :-- https://sparkygram.herokuapp.com/
+link :--https://instagramclone-082n.onrender.com/
 
  -- injoy
 
